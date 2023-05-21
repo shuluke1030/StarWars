@@ -1,4 +1,4 @@
-const  {getFilmTitles}  = require('./film');
+const  {getFilmTitles}  = require('./StarWarsAPI/film');
 jest.setTimeout(60000);
 describe('Film Titles', () => {
   test('should retrieve and process film titles correctly', async () => {

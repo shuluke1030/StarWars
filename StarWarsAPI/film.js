@@ -21,14 +21,11 @@ async function getFilmEpisodeId(url) {
 }
 
 async function getFilmTitles() {
-  const filmUrls = [
-    "https://swapi.dev/api/films/1/",
-    "https://swapi.dev/api/films/2/",
-    "https://swapi.dev/api/films/3/",
-    "https://swapi.dev/api/films/4/",
-    "https://swapi.dev/api/films/5/",
-    "https://swapi.dev/api/films/6/",
-  ];
+  const filmUrls = [];
+  for (let i = 1; i <= 6; i++) {
+    filmUrls.push(`https://swapi.dev/api/films/${i}/`);
+  }
+
   const titles = [];
   const episodeIds = [];
   

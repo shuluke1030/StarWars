@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-async function getCarsData() {
+async function getCarsName() {
     const carsName = [];
   
     for (let page = 1; page <= 4; page++) {
@@ -16,7 +16,9 @@ async function getCarsData() {
       }
     }
   
-    console.log(carsName);
+   return carsName;
   }
   
-  getCarsData();
+module.exports = {
+  getCarsName
+}
